@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="my.ivrs"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11" />
+    
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="my.ivrs.HomePage"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="my.ivrs.Survey"
+            android:label="@string/title_activity_survey"
+            android:parentActivityName="my.ivrs.HomePage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="my.ivrs.HomePage" />
+        </activity>
+        <activity
+            android:name="my.ivrs.ShowResult"
+            android:label="@string/title_activity_show_result"
+            android:parentActivityName="my.ivrs.HomePage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="my.ivrs.HomePage" />
+        </activity>
+        <activity
+            android:name="my.ivrs.SetAppoint"
+            android:label="@string/title_activity_set_appoint"
+            android:parentActivityName="my.ivrs.HomePage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="my.ivrs.HomePage" />
+        </activity>
+        <activity
+            android:name="my.ivrs.Appointment_new"
+            android:label="@string/title_activity_appointment_new"
+            android:parentActivityName="my.ivrs.SetAppoint" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="my.ivrs.SetAppoint" />
+        </activity>
+
+        <receiver android:name="my.ivrs.CallHandlerService" >
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="my.ivrs.IVR_Activity"
+            android:label="@string/title_activity_ivr_" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Survey" >
+    
+    <ImageView
+        android:id="@+id/survey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:contentDescription="@string/icon"
+        android:onClick="NewSurvey"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/survey_new" />
+    
+    <ImageView
+        android:id="@+id/survey_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/appointment_2"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:contentDescription="@string/icon"
+        android:src="@drawable/create" />
+
+    <ImageView
+        android:id="@+id/appointment_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/survey_2"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="addopt"
+        android:contentDescription="@string/icon"
+        android:src="@drawable/survey_view" />
+    
+    <ImageView
+        android:id="@+id/appointment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toRightOf="@+id/appointment_2"
+        android:layout_below="@id/survey"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/icon"
+        android:src="@drawable/view" />
+    
+    <ImageView
+        android:id="@+id/appointment_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toRightOf="@+id/appointment_2"
+        android:layout_below="@id/appointment"
+        android:layout_marginTop="40dp"
+        android:onClick="deleteAll"
+        android:contentDescription="@string/icon"
+        android:src="@drawable/survey_delete" />
+   
+    <ImageView
+        android:id="@+id/appointment_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/appointment_2"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/icon"
+        android:src="@drawable/delete" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:contentDescription="@string/icon"
+        android:src="@drawable/logo_3" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/logo"
+        android:layout_alignRight="@+id/survey_2"
+        android:layout_marginBottom="15dp"
+        android:text="on" />
+   
+</RelativeLayout>
