@@ -1,0 +1,179 @@
+Found a 23 line (53 tokens) duplication in the following files: 
+Starting at line 75 of E:\Study\Git\MobIVRS\IVRS\src\my\ivrs\Survey.java
+Starting at line 36 of E:\Study\Git\MobIVRS\IVRS\src\my\ivrs\SetAppoint.java
+
+		getMenuInflater().inflate(R.menu.survey, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case android.R.id.home:
+			// This ID represents the Home or Up button. In the case of this
+			// activity, the Up button is shown. Use NavUtils to allow users
+			// to navigate up one level in the application structure. For
+			// more details, see the Navigation pattern on Android Design:
+			//
+			// http://developer.android.com/design/patterns/navigation.html#up-vs-back
+			//
+			NavUtils.navigateUpFromSameTask(this);
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+
+	
+	public void NewSurvey(View view)
+=====================================================================
+Found a 24 line (52 tokens) duplication in the following files: 
+Starting at line 138 of E:\Study\Git\MobIVRS\IVRS\src\my\ivrs\ShowResult.java
+Starting at line 31 of E:\Study\Git\MobIVRS\IVRS\src\my\ivrs\Appointment_new.java
+
+		getMenuInflater().inflate(R.menu.show_result, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case android.R.id.home:
+			// This ID represents the Home or Up button. In the case of this
+			// activity, the Up button is shown. Use NavUtils to allow users
+			// to navigate up one level in the application structure. For
+			// more details, see the Navigation pattern on Android Design:
+			//
+			// http://developer.android.com/design/patterns/navigation.html#up-vs-back
+			//
+			NavUtils.navigateUpFromSameTask(this);
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+
+
+	
+}
+=====================================================================
+Found a 20 line (51 tokens) duplication in the following files: 
+Starting at line 75 of E:\Study\Git\MobIVRS\IVRS\src\my\ivrs\Survey.java
+Starting at line 138 of E:\Study\Git\MobIVRS\IVRS\src\my\ivrs\ShowResult.java
+Starting at line 36 of E:\Study\Git\MobIVRS\IVRS\src\my\ivrs\SetAppoint.java
+Starting at line 31 of E:\Study\Git\MobIVRS\IVRS\src\my\ivrs\Appointment_new.java
+
+		getMenuInflater().inflate(R.menu.survey, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case android.R.id.home:
+			// This ID represents the Home or Up button. In the case of this
+			// activity, the Up button is shown. Use NavUtils to allow users
+			// to navigate up one level in the application structure. For
+			// more details, see the Navigation pattern on Android Design:
+			//
+			// http://developer.android.com/design/patterns/navigation.html#up-vs-back
+			//
+			NavUtils.navigateUpFromSameTask(this);
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+=====================================================================
+Found a 18 line (40 tokens) duplication in the following files: 
+Starting at line 58 of E:\Study\Git\MobIVRS\IVRS\src\my\ivrs\Survey.java
+Starting at line 19 of E:\Study\Git\MobIVRS\IVRS\src\my\ivrs\SetAppoint.java
+Starting at line 14 of E:\Study\Git\MobIVRS\IVRS\src\my\ivrs\Appointment_new.java
+
+		setContentView(R.layout.activity_survey);
+		// Show the Up button in the action bar.
+		setupActionBar();
+	}
+
+	/**
+	 * Set up the {@link android.app.ActionBar}.
+	 */
+	private void setupActionBar() {
+
+		getActionBar().setDisplayHomeAsUpEnabled(true);
+
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.survey, menu);
+=====================================================================
+Found a 16 line (37 tokens) duplication in the following files: 
+Starting at line 60 of E:\Study\Git\MobIVRS\IVRS\src\my\ivrs\Survey.java
+Starting at line 123 of E:\Study\Git\MobIVRS\IVRS\src\my\ivrs\ShowResult.java
+Starting at line 21 of E:\Study\Git\MobIVRS\IVRS\src\my\ivrs\SetAppoint.java
+Starting at line 16 of E:\Study\Git\MobIVRS\IVRS\src\my\ivrs\Appointment_new.java
+
+		setupActionBar();
+	}
+
+	/**
+	 * Set up the {@link android.app.ActionBar}.
+	 */
+	private void setupActionBar() {
+
+		getActionBar().setDisplayHomeAsUpEnabled(true);
+
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.survey, menu);
+=====================================================================
+Found a 4 line (29 tokens) duplication in the following files: 
+Starting at line 41 of E:\Study\Git\MobIVRS\IVRS\src\my\ivrs\ShowResult.java
+Starting at line 44 of E:\Study\Git\MobIVRS\IVRS\src\my\ivrs\ShowResult.java
+
+		} catch (OptionalDataException e1) {
+			Toast.makeText(getApplicationContext(), e1.getMessage(),Toast.LENGTH_LONG).show();
+			return;
+		} catch (ClassNotFoundException e1) {
+=====================================================================
+Found a 6 line (29 tokens) duplication in the following files: 
+Starting at line 62 of E:\Study\Git\MobIVRS\IVRS\src\my\ivrs\Result.java
+Starting at line 102 of E:\Study\Git\MobIVRS\IVRS\src\my\ivrs\Result.java
+
+		bufferedWriter.close();
+		}
+		catch(Exception e)
+		{
+			Toast.makeText(ct, "File Not Found",Toast.LENGTH_LONG).show();
+			return new ArrayList<SurveyFile>();
+=====================================================================
+Found a 4 line (27 tokens) duplication in the following files: 
+Starting at line 260 of E:\Study\Git\MobIVRS\IVRS\src\my\ivrs\Survey.java
+Starting at line 74 of E:\Study\Git\MobIVRS\IVRS\src\my\ivrs\ShowResult.java
+
+			} catch (IOException e) {
+				Toast.makeText(getApplicationContext(), "Unable to Read File",Toast.LENGTH_LONG).show();
+				return;
+			}
+=====================================================================
+Found a 2 line (25 tokens) duplication in the following files: 
+Starting at line 93 of E:\Study\Git\MobIVRS\IVRS\src\my\ivrs\ShowResult.java
+Starting at line 103 of E:\Study\Git\MobIVRS\IVRS\src\my\ivrs\ShowResult.java
+Starting at line 106 of E:\Study\Git\MobIVRS\IVRS\src\my\ivrs\ShowResult.java
+
+			textViewArray.add(new TextView(this));
+			textViewArray.get(textViewArray.size()-1).setText("Q"+(i+1)+" : "+surveyFileObject.question);
+=====================================================================
+Found a 6 line (25 tokens) duplication in the following files: 
+Starting at line 14 of E:\Study\Git\MobIVRS\IVRS\src\my\ivrs\SetAppoint.java
+Starting at line 9 of E:\Study\Git\MobIVRS\IVRS\src\my\ivrs\HomePage.java
+Starting at line 9 of E:\Study\Git\MobIVRS\IVRS\src\my\ivrs\Appointment_new.java
+
+public class SetAppoint extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_set_appoint);
