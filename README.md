@@ -1,7 +1,11 @@
+**NOTE:** This project was done as part of a coursework and the repo is ported
+from svn. This is for backup purposes only. The code is not maintained. Please
+reach out to the author if you have any questions regarding this work.
+
 # MobIVRS
 Implementaion of IVRS on Android (MobIVRS)
 
-## Objective 
+## Objective
 * IVR based survey on Android – One can easily take the survey about any issue and record it in the database.
 * Appointment – One can schedule his/her appointments throughout the day using IVR system.
 * More features will be added later.
@@ -10,23 +14,23 @@ Implementaion of IVRS on Android (MobIVRS)
 * Homepage – ActivityHomepage
   * Home page of the application.
   * Contains links to configure the Survey and Appointments (not yet implemented) Options
-  
+
 * Survey Options Page – ActivitySurvey
   Page that contains following options –
   * A button to start or stop the IVRS Service.
   * To set the Survey (Question and corresponding options).
   * To delete the current survey (stops the IVRS service).
   * To view the Responses for the current survey
-  
+
   * When SET SURVEY is selected
     * Input for Questions and corresponding options are displayed to set.
     * Once done, the previous result would be deleted.
     * “Question” file is used to save the questions to a file.
-    
+
   * When VIEW RESULT is selected
     * “ShowResult” Activity is used to display the Results.
     * “Result” file is used to populate the responses for the questions.
-    
+
   * When DELETE SURVEY is selected
     * Any survey or response in the system is deleted, if found.
 
